@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    android:id="@+id/sctt"
+    android:screenOrientation="portrait"
+    android:configChanges="keyboardHidden|orientation">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ab">
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CREATE"
+            android:drawableRight="@drawable/add_icon"
+            />
+
+        <Button
+            android:id="@+id/btn_undo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/undo_icon"
+            android:layout_toRightOf="@+id/btn_add"
+            android:text="UNDO"
+            />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn_undo"
+            android:drawableRight="@drawable/save_icon"
+            android:text="Save"
+            />
+    </RelativeLayout>
+    <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/ab"
+       android:textSize="30sp"
+       android:id="@+id/tv"/>
+   <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:label="School Timetable"
+        android:text="School Timetable"
+        android:textSize="30sp" /> -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/ab"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="15sp"
+        android:layout_marginBottom="10sp"
+        android:gravity="bottom|end">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundedbutton"
+            android:backgroundTint="#41237d"
+            app:srcCompat="@drawable/ic_add_table"
+            android:id="@+id/floating_add"/> <!-- background color of button -->
+    </RelativeLayout>
+</RelativeLayout>
