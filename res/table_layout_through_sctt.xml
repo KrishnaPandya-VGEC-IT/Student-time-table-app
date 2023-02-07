@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/add_row_btn_in_table_layout_through_sctt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ROW"
+        android:drawableRight="@drawable/add_icon" />
+
+    <Button
+        android:id="@+id/add_col_btn_in_table_layout_through_sctt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COLUMN"
+        android:layout_toRightOf="@+id/add_row_btn_in_table_layout_through_sctt"
+        android:drawableRight="@drawable/add_icon" />
+
+    <Button
+        android:id="@+id/remove_row_btn_in_table_layout_through_sctt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/add_col_btn_in_table_layout_through_sctt"
+        android:text="ROW"
+        android:drawableRight="@drawable/delete_icon" />
+
+    <Button
+        android:id="@+id/remove_col_btn_in_table_layout_through_sctt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/remove_row_btn_in_table_layout_through_sctt"
+        android:text="COL"
+        android:drawableRight="@drawable/delete_icon" />
+
+</RelativeLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50sp"
+    android:layout_marginBottom="10sp"
+    android:layout_marginLeft="10sp"
+    android:layout_marginRight="10sp">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"><!-- match parent hatu -->
+
+        <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/table_layout_in_sctt" />
+<!--  <TableView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/gradient"
+        android:id="@+id/table_storage_layout"
+        android:animateLayoutChanges="true"
+        android:fillViewport="true"
+        android:layout_weight="1"
+        android:scrollbars="vertical">
+    </TableView> -->
+    </HorizontalScrollView>
+</ScrollView>
+</RelativeLayout>
+
