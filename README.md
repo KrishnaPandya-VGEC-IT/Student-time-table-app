@@ -28,7 +28,7 @@ Student time-table app
 
 1) Time table adapter interface
 
-<a href="Tables"><img src="https://github.com/KrishnaPandya-VGEC-IT/Student-time-table-app/blob/main/demo_imgs/Img1.png" align="center" height="600" width="300" ></a>
+<a href="Tables"><img src="https://github.com/KrishnaPandya-VGEC-IT/Student-time-table-app/blob/main/demo_imgs/Img1.png" align="center" height="600" width="400" ></a>
 
 2) Sample table
 
@@ -38,11 +38,11 @@ Student time-table app
 3) Table content
 
 
-<a href="Content"><img src="https://github.com/KrishnaPandya-VGEC-IT/Student-time-table-app/blob/main/demo_imgs/Img3.png" align="center" height="600" width="300" ></a>
+<a href="Content"><img src="https://github.com/KrishnaPandya-VGEC-IT/Student-time-table-app/blob/main/demo_imgs/Img3.png" align="center" height="600" width="400" ></a>
 
 4) Cell info
 
-<a href="Info"><img src="https://github.com/KrishnaPandya-VGEC-IT/Student-time-table-app/blob/main/demo_imgs/Img1.png" align="center" height="600" width="300" ></a>
+<a href="Info"><img src="https://github.com/KrishnaPandya-VGEC-IT/Student-time-table-app/blob/main/demo_imgs/Img1.png" align="center" height="600" width="400" ></a>
 
 
 
